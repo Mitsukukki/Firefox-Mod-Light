@@ -3,7 +3,7 @@
 
 /* Avoids white flash? */
 #tabbrowser-tabpanels{
-  background-color: var(--uc-light-bkgnd-color, #1a1a1b) !important;
+  background-color: var(--uc-light-bkgnd-color, #ffffff) !important;
 }
 /* Left ?
 .titlebar-buttonbox-container{ -moz-box-ordinal-group: 0 !important; }
@@ -17,7 +17,7 @@
 
 /* Non active tabs have darker text */
 	.tabbrowser-tab:not([visuallyselected="true"]):not([multiselected]):not(:hover) {
-		color: #ffffff5e !important;
+		color: #0000005e !important;
 	}
 
 
@@ -65,7 +65,7 @@ change (#navigator-toolbox) with your top bar (in this case #nav-bar) and use
 	#PersonalToolbar {
 
 		background-image: url(image/noise-512x512.png) !important;
-		background-color: #2A2A2AC0 !important;
+		background-color: #ffffffc0 !important;
 		-webkit-backdrop-filter: blur(32px) !important;
 		backdrop-filter: blur(32px) !important;
 		/* -webkit-backdrop-filter: blur(32px) !important;*/
@@ -87,7 +87,9 @@ change (#navigator-toolbox) with your top bar (in this case #nav-bar) and use
  
 /* Icons */
 	#PanelUI-menu-button {
-		list-style-image: url(image/Fx-Browser-icon-oneColor-white.png) !important;}
+		list-style-image: url(image/Fx-Browser-icon-oneColor-white.png) !important;
+		filter:brightness(0.15);
+	}
 	#PanelUI-button {
 			margin-inline-start: 0 !important;
 			padding-inline-start: 0 !important;
@@ -99,18 +101,22 @@ change (#navigator-toolbox) with your top bar (in this case #nav-bar) and use
 	}
 	#home-button {
 		list-style-image: url(image/fire-2-32.ico) !important;
+		filter:brightness(0.15);
 	}
 	#home-button .toolbarbutton-icon {
 		opacity: 0.7 !important;
 	}
 	#PlacesToolbarItems .bookmark-item[container] {
 		list-style-image: url(image/folder.svg) !important;
+		filter:brightness(0.15);
 	}
 	#forward-button {
 		list-style-image: url(image/right-arrow.svg) !important;
+		filter:brightness(0.15);
 	}
 	#back-button {
 		list-style-image: url(image/left-arrow.svg) !important;
+		filter:brightness(0.15);
 	}
 	#back-button > .toolbarbutton-icon {
 		border: none !important;
@@ -227,7 +233,7 @@ change (#navigator-toolbox) with your top bar (in this case #nav-bar) and use
 	}
 	#urlbar[breakout][breakout-extend] {
 		background-image: url(image/noise-512x512.png) !important;
-		background-color: #1E1E1EBF;
+		background-color: #e4e4e4bf;
 		backdrop-filter: blur(32px) !important;
 		
 	}
@@ -256,7 +262,7 @@ change (#navigator-toolbox) with your top bar (in this case #nav-bar) and use
 		
 		--lwt-toolbar-field-border-color:  transparent !important;
 		--lwt-toolbar-field-focus: transparent !important;
-		--toolbar-field-focus-border-color: #77777773 !important;
+		--toolbar-field-focus-border-color: #ffffff73 !important;
 		}
 
 	#urlbar:not(.megabar):not([focused="true"]):-moz-lwtheme, #urlbar:not(.megabar):not([focused="true"]):-moz-lwtheme:hover {
@@ -264,9 +270,9 @@ change (#navigator-toolbox) with your top bar (in this case #nav-bar) and use
 	}
 	#urlbar {
 		border: 0 !important;
-		border-bottom: 1px solid #ffffff30 !important;
+		border-bottom: 1px solid #e2e2e230 !important;
 		border-radius: 8px 8px 8px 8px !important;
-		background-color:#0000004d;
+		background-color:#dadada4d;
 	}
 
 	#urlbar {
@@ -288,7 +294,7 @@ change (#navigator-toolbox) with your top bar (in this case #nav-bar) and use
 	}
 /* Main BAR */
 	#navigator-toolbox {
-		background-color: rgb(50, 50, 52) !important;
+		background-color: rgb(255, 255, 255) !important;
 		--tabs-border-color: none !important;
 		--my-tab-min-width: 80px !important; /* 36px */
 		--tabs-navbar-shadow-size: 0px  !important;
@@ -348,7 +354,7 @@ if you change --tab-min-height it doesnt work for fullcreen
 		border-bottom: 1px solid #ffffff30 !important;
 		border-radius: 8px 8px 8px 8px !important;
 		background-image: none !important;
-		background-color:#0000004d !important;
+		background-color:#c0c0c04d !important;
 	}
 	
 
@@ -358,7 +364,7 @@ if you change --tab-min-height it doesnt work for fullcreen
 		border-top: 1px solid #b9b9b969 !important;
 		border-radius: 8px 8px 8px 8px !important;
 		background-image: none !important;
-		background-color: #404040d9 !important;
+		background-color: #c5c5c5d9 !important;
 	}
 
 /* Multiselect tabs design on hover */
@@ -367,7 +373,7 @@ if you change --tab-min-height it doesnt work for fullcreen
 		border-top: 1px solid #b9b9b969 !important;
 		border-radius: 8px 8px 8px 8px !important;
 		background-image: none !important;
-		background-color: #404040d9 !important;
+		background-color: #aaaaaad9 !important;
 	}
 	/* Fixing Multiselect */
 	.tab-background[multiselected="true"]:not([selected="true"]) > .tab-background-inner {
@@ -379,7 +385,7 @@ toolbar #tabs-newtab-button:not([disabled="true"]):not([checked]):not([open]):no
     border: 0 !important; 
 	border-radius: 20px 20px 20px 20px !important;
 	background-image: none !important;
-	background-color:#404040d9 !important;
+	background-color:#bebebed9 !important;
 }
 
 toolbar #tabs-newtab-button:not([disabled="true"]):-moz-any([open], [checked], :hover:active) > .toolbarbutton-icon {
